@@ -1,0 +1,74 @@
+#navbar {
+  padding: 3px 40px;
+  display: flex;
+}
+#navbar > div > img {
+  width: 100px;
+  cursor: pointer;
+}
+#search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#search > input {
+  width: 50%;
+}
+#search > button {
+  width: 60px;
+  font-size: 22px;
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+#navbar > img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+#container {
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+#container > div {
+  margin: auto;
+}
+#container > div > img {
+  width: 95%;
+  margin: auto;
+}
+#specs {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(145, 144, 144);
+  border-bottom: 1px solid rgb(145, 144, 144);
+  margin-top: 5px;
+  padding: 10px 0px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+#specs::-webkit-scrollbar {
+  display: none;
+}
+#specs > div {
+  margin-left: 10px;
+  padding: 5px 15px;
+  border: 1px solid rgb(150, 150, 150);
+  background-color: rgb(236, 236, 236);
+  border-radius: 25px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  cursor: pointer;
+}
+#specs > div:hover {
+  background-color: black;
+  color: white;
+}
